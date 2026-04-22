@@ -5,7 +5,7 @@ import react from "../assets/tecnologias/react.png";
 import tailwind from "../assets/tecnologias/tailwind.png";
 import bootstrap from "../assets/tecnologias/bootstrap.png";
 import rn from "../assets/tecnologias/react-native.png";
-import next from "../assets/tecnologias/next2.png";
+import next from "../assets/tecnologias/Next2.png";
 
 import node from "../assets/tecnologias/node.png";
 import express from "../assets/tecnologias/express.png";
