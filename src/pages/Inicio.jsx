@@ -30,7 +30,7 @@ export default function Inicio() {
                 <div>
                     <Tecnologias />
                 </div>
-                <div className="px-10 object-contain">
+                <div className="px-5 md:px-10">
                     <Slide />
                 </div>
             </div>

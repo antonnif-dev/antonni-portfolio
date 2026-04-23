@@ -20,7 +20,7 @@ export default function Navbar() {
     }, [dark]);
 
     return (
-        <nav className='flex justify-around gap-2 p-3 md:py-10'>
+        <nav className='flex justify-around gap-2 p-4'>
             <div className="flex flex-col md:flex-row items-center justify-center px-3 gap-1 md:gap-3 leading-tight"
                 onClick={() => navigate('/')}>
                 <h2 className="text-base md:text-3xl font-medium tracking-tight">Antonni Carlos de Freitas Moreira</h2>

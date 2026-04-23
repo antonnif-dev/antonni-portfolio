@@ -21,24 +21,31 @@ export default function Projetos() {
             <div className="p-5 space-y-16">
                 {[
                     {
-                        img: "/src/assets/projetos/saas-juridico.png",
+                        img: "/projetos/saas-juridico.PNG",
                         images: [
-                            "/src/assets/projetos/saas-juridico-modal1.png",
-                            "/src/assets/projetos/saas-juridico-modal2.png",
-                            "/src/assets/projetos/saas-juridico-modal3.png",
-                            "/src/assets/projetos/saas-juridico-modal4.png",
-                            "/src/assets/projetos/saas-juridico-modal5.png"
+                            "/projetos/saas-juridico-modal1.PNG",
+                            "/projetos/saas-juridico-modal2.PNG",
+                            "/projetos/saas-juridico-modal3.PNG",
+                            "/projetos/saas-juridico-modal4.PNG",
+                            "/projetos/saas-juridico-modal5.PNG"
                         ],
                         title: "Saas para juristas",
-                        description: "Plataforma para escritórios de advocacia. Com ferramentas que possibilitam...",
+                        description: "Plataforma para escritórios de advocacia. Com ferramentas que possibilitam. Plataforma para psicólogos com prontuário digital, controle de sessões e portal do paciente. Estrutura pensada para multi-tenant e expansão para outros nichos.",
                         techs: {
-                            Frontend: ["React" , "Tailwind" ],
-                            Backend: ["Node.js"],
-                            BancoDeDados : ["Firebase"],
+                            Frontend: ["React", "Tailwind"],
+                            Backend: ["Node.js", "Express"],
+                            BancoDeDados: ["Firebase"],
                         }
                     },
                     {
-                        img: "/src/assets/projetos/saas-juridico.png",
+                        img: "/projetos/saas-juridico.PNG",
+                        images: [
+                            "/projetos/sos-ferramentas-modal1.PNG",
+                            "/projetos/sos-ferramentas-modal2.PNG",
+                            "/projetos/sos-ferramentas-modal3.PNG",
+                            "/projetos/sos-ferramentas-modal4.PNG",
+                            "/projetos/sos-ferramentas-modal5.PNG"
+                        ],
                         title: "SOS Ferramentas",
                         description:
                             "Plataforma para psicólogos com prontuário digital, controle de sessões e portal do paciente. Estrutura pensada para multi-tenant e expansão para outros nichos.",
@@ -48,15 +55,24 @@ export default function Projetos() {
                             BancoDeDados: ["Firebase"]
                         }
                     },
+
                     {
-                        img: "/src/assets/projetos/projeto3.png",
-                        title: "Landing Page Profissional",
+                        img: "/projetos/saas-juridico.PNG",
+                        images: [
+                            "/projetos/saas-juridico-modal1.PNG",
+                            "/projetos/saas-juridico-modal2.PNG",
+                            "/projetos/saas-juridico-modal3.PNG",
+                            "/projetos/saas-juridico-modal4.PNG",
+                            "/projetos/saas-juridico-modal5.PNG"
+                        ],
+                        title: "Landing Pages",
                         description:
                             "Página institucional moderna com foco em conversão, responsividade e SEO. Estrutura leve e otimizada para performance.",
                         techs: {
                             Frontend: ["HTML", "CSS", "JavaScript", "Tailwind"]
                         }
-                    }
+                    },
+
 
                 ].map((project, index) => (
                     <div
@@ -80,10 +96,6 @@ export default function Projetos() {
                             <h2 className="text-2xl font-semibold">
                                 {project.title}
                             </h2>
-
-                            <p className="leading-relaxed">
-                                {project.description}
-                            </p>
 
                             {/* TECNOLOGIAS */}
                             <div className="space-y-2 pt-2">
@@ -112,6 +124,7 @@ export default function Projetos() {
                                 ))}
 
                             </div>
+
                         </div>
 
                     </div>

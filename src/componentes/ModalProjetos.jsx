@@ -8,7 +8,7 @@ export default function ModalProjeto({ project, onClose }) {
     };
 
     return (
-        <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-2">
 
             <div className="bg-white dark:bg-zinc-900 w-full h-full md:h-[90%] md:w-[90%] rounded-xl overflow-hidden relative py-5">
 
@@ -30,43 +30,12 @@ export default function ModalProjeto({ project, onClose }) {
                     {/* SIDEBAR */}
                     <div className="p-6 overflow-y-auto border-l border-gray-200 dark:border-zinc-700">
 
-                        <h2 className="text-xl font-semibold mb-4">
+                        <h2 className="text-xl font-semibold mb-4 text-white!">
                             {project.title}
                         </h2>
 
-                        {/* TECNOLOGIAS */}
-                        <div className="space-y-4 mb-6">
-
-                            {Object.entries(project.techs).map(([category, techs]) => (
-
-
-                                <div key={category}>
-
-                                    {/* TÍTULO DA CATEGORIA */}
-                                    <h3 className="text-sm font-semibold mb-2">
-                                        {category}
-                                    </h3>
-
-                                    {/* ITENS */}
-                                    <div className="flex flex-wrap gap-2">
-                                        {techs.map((tech, i) => (
-                                            <span
-                                                key={i}
-                                                className={`px-3 py-1 text-xs rounded-full ${techColors[category] || "bg-gray-500/20"}`}
-                                            >
-                                                {tech}
-                                            </span>
-                                        ))}
-                                    </div>
-
-                                </div>
-
-                            ))}
-
-                        </div>
-
                         {/* DESCRIÇÃO COMPLETA */}
-                        <p className="leading-relaxed">
+                        <p className="leading-relaxed text-white!">
                             {project.description}
                         </p>
 
