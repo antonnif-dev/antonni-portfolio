@@ -4,16 +4,18 @@ export default function SobreMim() {
 
             <h1 className="text-3xl font-semibold">Sobre mim</h1>
 
-            {/* TEXTO INICIAL */}
-            <p className="leading-relaxed">
-                Sou desenvolvedor focado em criar aplicações modernas, funcionais e com
-                boa experiência para o usuário. Tenho experiência com tecnologias como
-                React, Node.js e Tailwind, desenvolvendo desde landing pages até sistemas
-                completos (SaaS).
+            <div>
+                {/* TEXTO INICIAL */}
+                <p className="leading-relaxed">
+                    Sou desenvolvedor focado em criar aplicações modernas, funcionais e com
+                    boa experiência para o usuário. Tenho experiência com tecnologias como
+                    React, Node.js e Tailwind, desenvolvendo desde landing pages até sistemas
+                    completos (SaaS).
 
-                Meu objetivo é construir soluções escaláveis e bem estruturadas, sempre
-                buscando evoluir tanto tecnicamente quanto na forma de resolver problemas.
-            </p>
+                    Meu objetivo é construir soluções escaláveis e bem estruturadas, sempre
+                    buscando evoluir tanto tecnicamente quanto na forma de resolver problemas.
+                </p>
+            </div>
 
             {/* BLOCO IMAGEM + TEXTO */}
             <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -21,9 +23,9 @@ export default function SobreMim() {
                 {/* IMAGEM */}
                 <div className="flex justify-center">
                     <img
-                        src="/src/assets/foto-pixel.png" // ajuste aqui
+                        src="public/foto-pixel.png" // ajuste aqui
                         alt="Foto de perfil"
-                        className="w-64 h-64 object-cover rounded-xl shadow-lg"
+                        className="w-64 h-80 object-cover rounded-xl shadow-lg"
                     />
                 </div>
 

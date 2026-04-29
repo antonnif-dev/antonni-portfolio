@@ -18,7 +18,7 @@ export default function Projetos() {
                 <Carrossel />
             </div>
             */}
-            <div className="p-5 space-y-16">
+            <div className="p-5 space-y-8">
                 {[
                     {
                         img: "/projetos/saas-juridico.PNG",
@@ -77,7 +77,7 @@ export default function Projetos() {
                 ].map((project, index) => (
                     <div
                         key={index}
-                        className="grid md:grid-cols-2 gap-8 items-center"
+                        className="grid md:grid-cols-2 gap-2 items-center"
                     >
 
                         {/* IMAGEM */}

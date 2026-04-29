@@ -10,7 +10,7 @@ export default function ModalProjeto({ project, onClose }) {
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-2">
 
-            <div className="bg-white dark:bg-zinc-900 w-full h-full md:h-[90%] md:w-[90%] rounded-xl overflow-hidden relative py-5">
+            <div className="bg-white dark:bg-zinc-900 w-full h-full md:h-[90%] md:w-[90%] rounded-xl overflow-hidden relative pb-5">
 
                 {/* BOTÃO FECHAR */}
                 <button
@@ -20,22 +20,22 @@ export default function ModalProjeto({ project, onClose }) {
                     ✕
                 </button>
 
-                <div className="grid md:grid-cols-3 h-full">
+                <div className="grid grid-cols-1 md:grid-cols-3 md:h-full">
 
                     {/* CARROSSEL */}
-                    <div className="md:col-span-2 h-full md:h-120 overflow-hidden">
+                    <div className="md:col-span-2 h-[50vh] md:h-125 overflow-hidden">
                         <CarrosselVertical images={project.images || [project.img]} />
                     </div>
 
                     {/* SIDEBAR */}
-                    <div className="p-6 overflow-y-auto border-l border-gray-200 dark:border-zinc-700">
+                    <div className="p-4 md:p-6 overflow-y-auto border-t md:border-t-0 md:border-l border-gray-200 dark:border-zinc-700">
 
                         <h2 className="text-xl font-semibold mb-4 text-white!">
                             {project.title}
                         </h2>
 
                         {/* DESCRIÇÃO COMPLETA */}
-                        <p className="leading-relaxed text-white!">
+                        <p className="leading-relaxed text-white! py-4">
                             {project.description}
                         </p>
 

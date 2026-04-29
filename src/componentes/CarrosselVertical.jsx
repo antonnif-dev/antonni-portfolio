@@ -14,7 +14,7 @@ export default function CarrosselVertical({ images }) {
                     <img
                         src={img}
                         alt={`slide ${index}`}
-                        className="w-full h-60 md:h-120 object-contain rounded-xl shadow-lg px-8 md:pb-7"
+                        className="w-full h-100 md:h-120 object-contain rounded-xl shadow-lg px-8 md:pb-7"
                     />
                 </div>
             ))}
