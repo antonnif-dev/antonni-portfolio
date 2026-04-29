@@ -35,7 +35,7 @@ export default function Tecnologias() {
             key={index}
             src={img}
             alt="tecnologia"
-            className="h-12 w-auto object-contain opacity-80 hover:opacity-100 transition"
+            className="h-12 w-auto object-contain opacity-80 hover:opacity-100 transition flex shrink-0"
           />
         ))}
       </div>

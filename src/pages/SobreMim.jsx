@@ -1,6 +1,6 @@
 export default function SobreMim() {
     return (
-        <div className="max-w-5xl mx-auto px-5 space-y-10">
+        <div className="max-w-5xl mx-auto px-5 space-y-10 pb-5">
 
             <h1 className="text-3xl font-semibold">Sobre mim</h1>
 

@@ -25,8 +25,8 @@ const servicos = [
 export default function Inicio() {
 
     return (
-        <div>
-            <div className="p-5 md:p-10">
+        <div className="space-y-5">
+            <div className="">
                 <div>
                     <Tecnologias />
                 </div>
@@ -35,7 +35,7 @@ export default function Inicio() {
                 </div>
             </div>
 
-            <div>
+            <div className="md:pt-5">
                 <h2>O que eu posso fazer por você:</h2>
                 <section className="grid grid-cols-3 gap-2 md:gap-20 p-5 md:px-20">
                     {servicos.map((service, index) => (
@@ -49,7 +49,7 @@ export default function Inicio() {
                 </section>
             </div>
 
-            <div className="p-5 py-10 flex justify-center">
+            <div className="p-5 py-10 md:py-20 flex justify-center">
                 <div className="max-w-3xl text-center">
 
                     <h2 className="text-xl md:text-2xl italic">

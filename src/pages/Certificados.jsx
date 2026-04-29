@@ -24,6 +24,20 @@ import js6 from "../assets/certificados/javascript/Curso JavaScript_ manipulando
 import js7 from "../assets/certificados/javascript/Curso JavaScript_ métodos de array.png";
 import js8 from "../assets/certificados/javascript/Curso JavaScript_ programando a Orientação a Objetos.png";
 import js9 from "../assets/certificados/javascript/Curso Node.js e terminal_ dominando o ambiente de desenvolvimento front-end.png";
+import js10 from "../assets/certificados/javascript/Curso JavaScript_ entendendo promises e async_await.png";
+import js11 from "../assets/certificados/javascript/Curso JavaScript_ evoluindo a sua aplicação com ES6+.png";
+import js12 from "../assets/certificados/javascript/Curso JavaScript_ implementando CRUD com requisições HTTP.png";
+
+/* ================== React ================== */
+import react1 from "../assets/certificados/react/Curso React_ desenvolvendo com JavaScript.png";
+import react2 from "../assets/certificados/react/Curso React_ desenvolvendo em React Router com JavaScript.png";
+import react3 from "../assets/certificados/react/Curso React com TailwindCSS_ estilizando componentes.png";
+import react4 from "../assets/certificados/react/Curso React_ como os componentes funcionam.png";
+import react5 from "../assets/certificados/react/Curso React_ Function Components, uma abordagem moderna.png";
+import react6 from "../assets/certificados/react/Curso React_ estilize componentes com Styled Components e manipule arquivos estáticos.png";
+import react7 from "../assets/certificados/react/Curso React_ gerencie estados globalmente com Context API.png";
+import react8 from "../assets/certificados/react/Curso React_ praticando React com Js.png";
+import react9 from "../assets/certificados/react/Curso React Native_ desenvolvendo com Expo.png";
 
 /* ================= BACKEND ================= */
 import back1 from "../assets/certificados/backend/Curso Git e GitHub_ compartilhando e colaborando em projetos.png";
@@ -58,6 +72,9 @@ const certificados = {
     { title: "JS arrays", img: js7 },
     { title: "JS OOP", img: js8 },
     { title: "Node + terminal", img: js9 },
+    { title: "Promises + Async await", img: js10 },
+    { title: "Js Evoluindo com ES6+", img: js11 },
+    { title: "Crud com requisições http", img: js12 },
   ],
 
   backend: [
@@ -67,8 +84,17 @@ const certificados = {
     { title: "Node API REST", img: back4 },
   ],
 
-  react: [],
-  "react-native": [],
+  react: [
+  { title: "React com Javascript", img: react1 },
+  { title: "React Router", img: react2 },
+  { title: "React com Tailwind", img: react3 },
+  { title: "React Componentes", img: react4 },
+  { title: "Function Components", img: react5 },
+  { title: "Style Components", img: react6 },
+  { title: "Context API", img: react7 },
+  { title: "Praticando React com Js", img: react8 },
+  { title: "React Native", img: react9 },
+  ]
 };
 
 const tabs = [

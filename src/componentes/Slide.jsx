@@ -66,7 +66,7 @@ export default function Slide() {
 
     return (
         <div
-            className="relative w-full h-70 md:h-80 overflow-hidden rounded-xl"
+            className="relative w-full h-70 md:h-90 overflow-hidden rounded-xl"
             onMouseDown={(e) => handleStart(e.clientX)}
             onMouseUp={(e) => handleEnd(e.clientX)}
             onTouchStart={(e) => handleStart(e.touches[0].clientX)}

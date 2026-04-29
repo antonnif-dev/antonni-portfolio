@@ -10,7 +10,7 @@ export default function ModalProjeto({ project, onClose }) {
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-2">
 
-            <div className="bg-white dark:bg-zinc-900 w-full h-full md:h-[90%] md:w-[90%] rounded-xl overflow-hidden relative pb-5">
+            <div className="bg-zinc-900 w-full h-full md:h-[90%] md:w-[90%] rounded-xl overflow-hidden relative pb-5">
 
                 {/* BOTÃO FECHAR */}
                 <button
