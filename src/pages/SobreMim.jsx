@@ -1,6 +1,9 @@
+import SvgMascara from '../componentes/SvgMascara';
+import ImagemSvgMascara from '../componentes/ImagemSvgMascara';
+
 export default function SobreMim() {
     return (
-        <div className="max-w-5xl mx-auto px-5 space-y-10 pb-5">
+        <div className="max-w-5xl mx-auto px-5 space-y-5 pb-5">
 
             <h1 className="text-3xl font-semibold">Sobre mim</h1>
 
@@ -18,16 +21,10 @@ export default function SobreMim() {
             </div>
 
             {/* BLOCO IMAGEM + TEXTO */}
-            <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="grid md:grid-cols-2 gap-2 items-center">
 
                 {/* IMAGEM */}
-                <div className="flex justify-center">
-                    <img
-                        src="public/foto-pixel.png" // ajuste aqui
-                        alt="Foto de perfil"
-                        className="w-64 h-80 object-cover rounded-xl shadow-lg"
-                    />
-                </div>
+                <ImagemSvgMascara />
 
                 {/* TEXTO LADO */}
                 <div>
