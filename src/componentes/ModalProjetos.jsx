@@ -8,7 +8,7 @@ export default function ModalProjeto({ project, onClose }) {
     };
 
     return (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-2">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-2 bg-black/80 backdrop-blur-sm">
 
             <div className="bg-zinc-900 w-full h-full md:h-[90%] md:w-[90%] rounded-xl overflow-hidden relative pb-5">
 
@@ -23,7 +23,7 @@ export default function ModalProjeto({ project, onClose }) {
                 <div className="grid grid-cols-1 md:grid-cols-3 md:h-full">
 
                     {/* CARROSSEL */}
-                    <div className="md:col-span-2 h-[50vh] md:h-125 overflow-hidden">
+                    <div className="md:col-span-2 h-[50vh] md:h-125 overflow-hidden relative">
                         <CarrosselVertical images={project.images || [project.img]} />
                     </div>
 

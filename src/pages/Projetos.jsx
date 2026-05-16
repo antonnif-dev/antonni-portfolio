@@ -1,10 +1,21 @@
 import { Link } from "react-router-dom";
 import Carrossel from '../componentes/Carrossel';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ModalProjeto from "../componentes/ModalProjetos";
 
 export default function Projetos() {
     const [selectedProject, setSelectedProject] = useState(null);
+    useEffect(() => {
+        if (selectedProject) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
+
+        return () => {
+            document.body.style.overflow = "auto";
+        };
+    }, [selectedProject]);
     const techColors = {
         Frontend: "bg-blue-500/20 text-blue-500 dark:text-blue-400",
         Backend: "bg-green-500/20 text-green-500 dark:text-green-400",

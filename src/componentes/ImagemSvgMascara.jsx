@@ -5,7 +5,7 @@ export default function ProfileSymbolMask() {
             {/* FUNDO alinhado exatamente ao SVG */}
             <div className="absolute inset-0 flex items-center justify-center">
                 <img
-                    src="/foto-perfil.jpg"
+                    src="/foto-pixel.png"
                     alt="Foto de fundo"
                     className="w-[85%] h-auto object-cover scale-110 blur-[3px] brightness-50"
                 />
@@ -78,7 +78,7 @@ export default function ProfileSymbolMask() {
 
                     {/* IMAGEM COM MÁSCARA */}
                     <image
-                        href="/foto-perfil.jpg"
+                        href="/foto-pixel.png"
                         width="500"
                         height="300"
                         preserveAspectRatio="xMidYMid slice"

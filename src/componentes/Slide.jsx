@@ -2,15 +2,15 @@ import { useState, useEffect } from "react";
 
 export default function Slide() {
     const slides = [
-        "/projetos/saas-juridico-inicio.PNG",
-        "/projetos/saas-juridico-inicio.PNG",
-        "/projetos/saas-juridico-inicio.PNG",
+        "/projetos/teste-pc.png",
+        "/projetos/teste-pc.png",
+        "/projetos/teste-pc.png",
     ];
 
     const slidesMobile = [
-        "/projetos/fgc-capa.png",
-        "/projetos/organizador-capa.png",
-        "/projetos/lex-link.jpeg",
+        "/projetos/teste-quadrada.png",
+        "/projetos/teste-quadrada.png",
+        "/projetos/teste-quadrada.png",
     ];
 
     const [current, setCurrent] = useState(0);
@@ -66,7 +66,7 @@ export default function Slide() {
 
     return (
         <div
-            className="relative w-full h-70 md:h-90 overflow-hidden rounded-xl"
+            className="relative w-full h-80 md:h-135 overflow-hidden rounded-xl"
             onMouseDown={(e) => handleStart(e.clientX)}
             onMouseUp={(e) => handleEnd(e.clientX)}
             onTouchStart={(e) => handleStart(e.touches[0].clientX)}
