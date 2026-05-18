@@ -32,45 +32,47 @@ export default function Projetos() {
             <div className="p-5 space-y-8">
                 {[
                     {
-                        img: "/projetos/saas-juridico.PNG",
+                        img: "/projetos/sos-saude/capa-saude.png",
                         images: [
-                            "/projetos/saas-juridico-modal1.PNG",
-                            "/projetos/saas-juridico-modal2.PNG",
-                            "/projetos/saas-juridico-modal3.PNG",
-                            "/projetos/saas-juridico-modal4.PNG",
-                            "/projetos/saas-juridico-modal5.PNG"
+                            "/projetos/sos-saude/modal-dashboard.png",
+                            "/projetos/sos-saude/modal-pacientes.png",
+                            "/projetos/sos-saude/modal-sessoes.png",
+                            "/projetos/sos-saude/modal-prontuario.png",
+                            "/projetos/sos-saude/modal-anamnese.png",
+                            "/projetos/sos-saude/modal-mapaEvolucao.png",
                         ],
-                        title: "Saas para juristas",
-                        description: "Plataforma para escritórios de advocacia. Com ferramentas que possibilitam. Plataforma para psicólogos com prontuário digital, controle de sessões e portal do paciente. Estrutura pensada para multi-tenant e expansão para outros nichos.",
-                        techs: {
-                            Frontend: ["React", "Tailwind"],
-                            Backend: ["Node.js", "Express"],
-                            BancoDeDados: ["Firebase"],
-                        }
-                    },
-                    {
-                        img: "/projetos/saas-juridico.PNG",
-                        images: [
-                            "/projetos/sos-ferramentas-modal1.PNG",
-                            "/projetos/sos-ferramentas-modal2.PNG",
-                            "/projetos/sos-ferramentas-modal3.PNG",
-                            "/projetos/sos-ferramentas-modal4.PNG",
-                            "/projetos/sos-ferramentas-modal5.PNG"
-                        ],
-                        title: "SOS Ferramentas",
+                        title: "SOS Saúde",
                         description:
                             "Plataforma para psicólogos com prontuário digital, controle de sessões e portal do paciente. Estrutura pensada para multi-tenant e expansão para outros nichos.",
                         techs: {
-                            Frontend: ["Next.js", "Tailwind"],
-                            Backend: ["Node.js"],
+                            Frontend: ["React", "Vite", "Tailwind"],
+                            Backend: ["Node", "Express",],
                             BancoDeDados: ["Firebase"]
                         }
                     },
-
                     {
                         img: "/projetos/saas-juridico.PNG",
                         images: [
-                            "/projetos/saas-juridico-modal1.PNG",
+                            "/projetos/sos-advocacia/modal-dashboard.png",
+                            "/projetos/sos-advocacia/modal-pacientes.png",
+                            "/projetos/sos-advocacia/modal-sessoes.png",
+                            "/projetos/sos-advocacia/modal-agenda.png",
+                            "/projetos/sos-advocacia/modal-documentos.png",
+                            "/projetos/sos-advocacia/modal-mural.png",
+                        ],
+                        title: "SOS Advocacia",
+                        description: "Plataforma para escritórios de advocacia. Com ferramentas que possibilitam. Plataforma para psicólogos com prontuário digital, controle de sessões e portal do paciente. Estrutura pensada para multi-tenant e expansão para outros nichos.",
+                        techs: {
+                            Frontend: ["React", "Vite", "Tailwind"],
+                            Backend: ["Node", "Express",],
+                            BancoDeDados: ["Firebase"]
+                        }
+                    },
+                    {
+                        img: "/projetos/institucionais/capa-institucionais.png",
+                        images: [
+                            "/projetos/institucionais/modal-1.png",
+                            "/projetos/institucionais/modal-2.png",
                             "/projetos/saas-juridico-modal2.PNG",
                             "/projetos/saas-juridico-modal3.PNG",
                             "/projetos/saas-juridico-modal4.PNG",
@@ -88,23 +90,66 @@ export default function Projetos() {
                 ].map((project, index) => (
                     <div
                         key={index}
-                        className="grid md:grid-cols-2 gap-2 items-center"
+                        className="grid md:grid-cols-2 gap-7 items-center"
                     >
 
                         {/* IMAGEM */}
-                        <div>
+                        <div className="relative group">
+
                             <img
                                 src={project.img}
                                 alt={project.title}
                                 onClick={() => setSelectedProject(project)}
-                                className="w-full h-full object-cover rounded-xl shadow-lg cursor-pointer hover:scale-105 transition"
+                                className="
+                            w-full h-full object-cover rounded-xl shadow-lg cursor-pointer
+                            transition duration-300
+                            group-hover:scale-[1.02]
+                            borda
+                            hover:shadow-black dark:hover:shadow-yellow-400/30
+                            hover:border-black dark:hover:border-yellow-300/40
+                            "
                             />
+
+                            {/* FLOATING CARD */}
+                            <div
+                                onClick={() => setSelectedProject(project)}
+                                className="
+                            absolute bottom-2 left-1/2
+                            bg-black/80 dark:bg-zinc-900/90
+                            backdrop-blur-md
+                            text-white
+                            px-2.5 py-1.5
+                            rounded-2xl
+                            shadow-2xl
+                            border border-white/10
+                            flex items-center gap-2
+                            cursor-pointer
+                            transition-all duration-300
+                            group-hover:bottom-6
+                            animate-[float_3s_ease-in-out_infinite]
+                            "
+                            >
+
+                                {/* Ícone */}
+                                <div className="flex items-center justify-center w-10 h-7 md:h-10 rounded-full bg-yellow-400 text-black font-bold">
+                                    +
+                                </div>
+
+                                {/* Texto */}
+                                <div>
+                                    <p className="text-xs text-gray-300">
+                                        Ver mais informações
+                                    </p>
+                                </div>
+
+                            </div>
+
                         </div>
 
                         {/* CONTEÚDO */}
                         <div className="space-y-4">
 
-                            <h2 className="text-2xl font-semibold">
+                            <h2 className="text-2xl font-semibold text-center">
                                 {project.title}
                             </h2>
 
@@ -149,6 +194,6 @@ export default function Projetos() {
                 />
             )}
         </div>
-    )
+    );
 
 };

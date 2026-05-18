@@ -28,13 +28,13 @@ export default function Navbar() {
 
             <div className="flex gap-4 text-sm md:text-lg flex-col md:flex-row text-white dark:text-black">
                 <div className="flex gap-4 md:gap-8 text-sm md:text-lg flex-col md:flex-row">
-                    <Link to="/projetos" className="hover:opacity-70 transition">
+                    <Link to="/projetos" className="titulo-menu hover:opacity-70 transition">
                         Projetos
                     </Link>
-                    <Link to="/certificados" className="hover:opacity-70 transition">
+                    <Link to="/certificados" className="titulo-menu hover:opacity-70 transition">
                         Certificados
                     </Link>
-                    <Link to="/sobremim" className="hover:opacity-70 transition">
+                    <Link to="/sobremim" className="titulo-menu hover:opacity-70 transition">
                         Sobre mim
                     </Link>
                 </div>

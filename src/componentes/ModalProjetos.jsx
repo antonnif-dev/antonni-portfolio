@@ -20,10 +20,10 @@ export default function ModalProjeto({ project, onClose }) {
                     ✕
                 </button>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 md:h-full">
+                <div className="grid grid-cols-1 md:grid-cols-[45%_55%] md:h-full">
 
                     {/* CARROSSEL */}
-                    <div className="md:col-span-2 h-[50vh] md:h-125 overflow-hidden relative">
+                    <div className="h-[50vh] md:h-full overflow-hidden relative">
                         <CarrosselVertical images={project.images || [project.img]} />
                     </div>
 
@@ -40,9 +40,7 @@ export default function ModalProjeto({ project, onClose }) {
                         </p>
 
                     </div>
-
                 </div>
-
             </div>
         </div>
     );

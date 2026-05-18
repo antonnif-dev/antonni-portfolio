@@ -156,6 +156,10 @@ code {
   background: var(--code-bg);
 }
 
+.borda {
+    @apply border-2 md:border-[5px] border-black dark:border-yellow-300;
+}
+
 /* fontes */
 
 @font-face {
@@ -175,4 +179,19 @@ code {
 .titulo-nome {
   font-family: 'LucidaBright', serif;
   color: black;
+}
+
+.titulo-menu {
+  font-family: 'LucidaFaxItalic', serif;
+}
+
+/* animação card flutuante */
+@keyframes float {
+  0%, 100% {
+    transform: translate(-50%, 0px);
+  }
+
+  50% {
+    transform: translate(-50%, -6px);
+  }
 }

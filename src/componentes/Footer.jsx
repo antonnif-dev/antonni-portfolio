@@ -6,7 +6,7 @@ import {
 
 export default function Footer() {
     return (
-        <nav className="space-y-5 p-5 dark:border-t bg-sky-800 dark:bg-inherit">
+        <nav className="space-y-5 p-5 dark:border-t border-yellow-300 bg-sky-800 dark:bg-inherit">
             <div>
                 <section className="flex justify-center gap-10 text-3xl text-white!">
                     <a href="https://github.com/antonnifreitas" 
