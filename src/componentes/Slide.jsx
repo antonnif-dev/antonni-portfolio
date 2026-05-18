@@ -66,7 +66,7 @@ export default function Slide() {
 
     return (
         <div
-            className="relative w-full h-80 md:h-135 overflow-hidden rounded-xl"
+            className="relative w-full md:w-3xl h-80 md:h-100 overflow-hidden rounded-xl border-2 md:border-5 border-black "
             onMouseDown={(e) => handleStart(e.clientX)}
             onMouseUp={(e) => handleEnd(e.clientX)}
             onTouchStart={(e) => handleStart(e.touches[0].clientX)}
@@ -77,7 +77,7 @@ export default function Slide() {
                     key={index}
                     src={img}
                     alt={`slide ${index}`}
-                    className={`absolute top-0 left-0 w-full h-full object-cover object-top md:object-center transition-opacity duration-700 ${index === current
+                    className={`absolute top-0 left-0 w-full h-full object-contain object-top transition-opacity duration-700 ${index === current
                         ? "opacity-100"
                         : "opacity-0"
                         }`}

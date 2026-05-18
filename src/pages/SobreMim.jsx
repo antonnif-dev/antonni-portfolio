@@ -21,7 +21,7 @@ export default function SobreMim() {
             </div>
 
             {/* BLOCO IMAGEM + TEXTO */}
-            <div className="grid md:grid-cols-2 gap-2 items-center">
+            <div className="grid md:grid-cols-2 items-center">
 
                 {/* IMAGEM */}
                 <ImagemSvgMascara />

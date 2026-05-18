@@ -31,7 +31,7 @@ export default function Footer() {
             </div>
 
             <div>
-                <h2 className="text-base md:text-3xl font-medium tracking-tight">
+                <h2 className="text-base text-center md:text-3xl font-medium tracking-tight">
                     © 2026: Desenvolvido por Antonni
                 </h2>
             </div>

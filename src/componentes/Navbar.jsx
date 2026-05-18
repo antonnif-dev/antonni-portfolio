@@ -20,13 +20,13 @@ export default function Navbar() {
     }, [dark]);
 
     return (
-        <nav className="flex justify-between gap-2 p-4 md:p-10 lg:p-15 bg-sky-800 dark:bg-inherit">
-            <div className="flex flex-col md:flex-row items-center justify-center px-3 gap-1 md:gap-3 leading-tight"
+        <nav className="flex justify-between gap-2 p-6 md:p-10 bg-sky-800 dark:bg-white dark:rounded-b-2xl">
+            <div className="flex flex-col md:flex-row items-center justify-center leading-tight"
                 onClick={() => navigate('/')}>
-                <h2 className="text-base md:text-3xl font-medium tracking-tight">Antonni Carlos de Freitas Moreira</h2>
+                <p className="titulo-nome text-3xl md:text-5xl text-center font-medium text-white dark:text-black tracking-tight">Antonni Carlos de Freitas Moreira</p>
             </div>
 
-            <div className="flex gap-4 text-sm md:text-lg flex-col md:flex-row text-white!">
+            <div className="flex gap-4 text-sm md:text-lg flex-col md:flex-row text-white dark:text-black">
                 <div className="flex gap-4 md:gap-8 text-sm md:text-lg flex-col md:flex-row">
                     <Link to="/projetos" className="hover:opacity-70 transition">
                         Projetos
@@ -43,7 +43,7 @@ export default function Navbar() {
             <div>
                 <button
                     onClick={() => setDark(!dark)}
-                    className="top-4 right-4 z-50 py-2 rounded"
+                    className="top-4 right-4 z-50 py-8 md:py-0 rounded"
                 >
                     {dark ? "🌙" : "☀️"}
                 </button>

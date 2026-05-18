@@ -30,13 +30,13 @@ export default function Inicio() {
                 <div>
                     <Tecnologias />
                 </div>
-                <div className="px-5 md:px-10">
+                <div className="px-5 md:px-10 flex justify-center">
                     <Slide />
                 </div>
             </div>
 
             <div className="md:pt-5">
-                <h2>O que eu posso fazer por você:</h2>
+                <h2 className="text-center">O que eu posso fazer por você:</h2>
                 <section className="grid grid-cols-3 gap-2 md:gap-20 p-5 md:px-20">
                     {servicos.map((service, index) => (
                         <CardServicos

@@ -3,16 +3,16 @@ export default function ProfileSymbolMask() {
         <div className="relative w-full max-w-[700px] h-[500px] mx-auto overflow-hidden rounded-3xl">
 
             {/* FUNDO alinhado exatamente ao SVG */}
-            <div className="absolute inset-0 flex items-center justify-center">
+            <div className="absolute inset-0 flex items-center justify-center  scale-90 lg:scale-75">
                 <img
-                    src="/foto-pixel.png"
+                    src="/foto-perfil.jpeg"
                     alt="Foto de fundo"
                     className="w-[85%] h-auto object-cover scale-110 blur-[3px] brightness-50"
                 />
             </div>
 
             {/* SVG */}
-            <div className="absolute inset-0 flex items-center justify-center z-10">
+            <div className="absolute inset-0 flex items-center justify-center z-10 scale-95 lg:scale-80">
                 <svg
                     viewBox="0 0 500 300"
                     xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +78,7 @@ export default function ProfileSymbolMask() {
 
                     {/* IMAGEM COM MÁSCARA */}
                     <image
-                        href="/foto-pixel.png"
+                        href="/foto-perfil.jpeg"
                         width="500"
                         height="300"
                         preserveAspectRatio="xMidYMid slice"
