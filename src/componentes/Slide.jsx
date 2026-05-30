@@ -2,15 +2,15 @@ import { useState, useEffect } from "react";
 
 export default function Slide() {
     const slides = [
-        "/projetos/teste-pc.png",
-        "/projetos/teste-pc.png",
-        "/projetos/teste-pc.png",
+        "/projetos/sos-saude/capa-saude.png",
+        "/projetos/saas-juridico.PNG",
+        "/projetos/sos-musico/capa-musico.png",
     ];
 
     const slidesMobile = [
-        "/projetos/teste-quadrada.png",
-        "/projetos/teste-quadrada.png",
-        "/projetos/teste-quadrada.png",
+        "/projetos/sos-saude/modal-dashboard.png",
+        "/projetos/sos-advocacia/modal-dashboard.png",
+        "/projetos/institucionais/modal-1.png",
     ];
 
     const [current, setCurrent] = useState(0);

@@ -45,7 +45,7 @@ export default function Projetos() {
                         description:
                             "Plataforma para psicólogos com prontuário digital, controle de sessões e portal do paciente. Estrutura pensada para multi-tenant e expansão para outros nichos.",
                         techs: {
-                            Frontend: ["React", "Vite", "Tailwind"],
+                            Frontend: ["React", "Vite", "JavaScript", "Tailwind"],
                             Backend: ["Node", "Express",],
                             BancoDeDados: ["Firebase"]
                         }
@@ -63,7 +63,7 @@ export default function Projetos() {
                         title: "SOS Advocacia",
                         description: "Plataforma para escritórios de advocacia. Com ferramentas que possibilitam. Plataforma para psicólogos com prontuário digital, controle de sessões e portal do paciente. Estrutura pensada para multi-tenant e expansão para outros nichos.",
                         techs: {
-                            Frontend: ["React", "Vite", "Tailwind"],
+                            Frontend: ["React", "Vite", "JavaScript", "Tailwind"],
                             Backend: ["Node", "Express",],
                             BancoDeDados: ["Firebase"]
                         }
@@ -82,7 +82,42 @@ export default function Projetos() {
                         description:
                             "Página institucional moderna com foco em conversão, responsividade e SEO. Estrutura leve e otimizada para performance.",
                         techs: {
-                            Frontend: ["HTML", "CSS", "JavaScript", "Tailwind"]
+                            Frontend: ["React", "JavaScript", "Tailwind"]
+                        }
+                    },
+                    {
+                        img: "/projetos/sos-musico/capa-musico.png",
+                        images: [
+                            "/projetos/sos-advocacia/modal-dashboard.png",
+                            "/projetos/sos-advocacia/modal-pacientes.png",
+                            "/projetos/sos-advocacia/modal-sessoes.png",
+                            "/projetos/sos-advocacia/modal-agenda.png",
+                            "/projetos/sos-advocacia/modal-documentos.png",
+                            "/projetos/sos-advocacia/modal-mural.png",
+                        ],
+                        title: "SOS Músico",
+                        description: "Plataforma para escritórios de advocacia. Com ferramentas que possibilitam. Plataforma para psicólogos com prontuário digital, controle de sessões e portal do paciente. Estrutura pensada para multi-tenant e expansão para outros nichos.",
+                        techs: {
+                            Frontend: ["React", "Vite", "JavaScript", "Tailwind"],
+                            Backend: ["Node", "Express",],
+                            BancoDeDados: ["Supabase"]
+                        }
+                    },
+                    {
+                        img: "/projetos/numero-secreto.png",
+                        images: [
+                            "/projetos/institucionais/modal-1.png",
+                            "/projetos/institucionais/modal-2.png",
+                            "/projetos/saas-juridico-modal2.PNG",
+                            "/projetos/saas-juridico-modal3.PNG",
+                            "/projetos/saas-juridico-modal4.PNG",
+                            "/projetos/saas-juridico-modal5.PNG"
+                        ],
+                        title: "Projetos de estudante",
+                        description:
+                            "Página institucional moderna com foco em conversão, responsividade e SEO. Estrutura leve e otimizada para performance.",
+                        techs: {
+                            Frontend: ["React", "JavaScript", "Tailwind"]
                         }
                     },
 
@@ -160,15 +195,15 @@ export default function Projetos() {
 
                                     <div key={category}>
 
-                                        <span className="text-xs">
+                                        <span className="text-xs md:text-xl">
                                             {category}:
                                         </span>
 
-                                        <div className="flex flex-wrap gap-2 mt-1 flex justify-center">
+                                        <div className="flex flex-wrap gap-2 mt-1 justify-center">
                                             {techs.map((tech, i) => (
                                                 <span
                                                     key={i}
-                                                    className={`px-3 py-1 text-xs rounded-full ${techColors[category] || "bg-gray-500/20"}`}
+                                                    className={`px-3 py-1 text-xs md:text-xl rounded-full ${techColors[category] || "bg-gray-500/20"}`}
                                                 >
                                                     {tech}
                                                 </span>

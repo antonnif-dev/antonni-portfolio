@@ -20,7 +20,7 @@ export default function Navbar() {
     }, [dark]);
 
     return (
-        <nav className="flex justify-between gap-2 p-6 md:p-10 bg-sky-800 dark:bg-white dark:rounded-b-2xl">
+        <nav className="flex justify-between gap-4 p-6 md:p-10 bg-sky-800 dark:bg-white dark:rounded-b-2xl">
             <div className="flex flex-col md:flex-row items-center justify-center leading-tight"
                 onClick={() => navigate('/')}>
                 <p className="titulo-nome text-3xl md:text-5xl text-center font-medium text-white dark:text-black tracking-tight">Antonni Carlos de Freitas Moreira</p>

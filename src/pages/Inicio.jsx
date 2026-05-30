@@ -49,7 +49,7 @@ export default function Inicio() {
                 </section>
             </div>
 
-            <div className="p-5 py-10 md:py-20 flex justify-center">
+            <div className="py-5 md:py-20 flex justify-center">
                 <div className="max-w-3xl text-center">
 
                     <h2 className="text-xl md:text-2xl italic">
