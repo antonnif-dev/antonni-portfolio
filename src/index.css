@@ -17,6 +17,21 @@
   animation: slide 15s linear infinite;
 }
 
+@keyframes slide-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-reverse {
+  display: flex;
+  width: max-content;
+  animation: slide-reverse 15s linear infinite;
+}
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 @layer base {
@@ -157,7 +172,7 @@ code {
 }
 
 .borda {
-    @apply border-2 md:border-[5px] border-black dark:border-yellow-300;
+    @apply border-2 md:border-[6px] border-black dark:border-yellow-300;
 }
 
 /* fontes */

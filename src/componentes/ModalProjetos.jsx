@@ -15,12 +15,12 @@ export default function ModalProjeto({ project, onClose }) {
                 {/* BOTÃO FECHAR */}
                 <button
                     onClick={onClose}
-                    className="absolute top-4 right-4 z-50 text-white bg-black/70 px-3 py-1 rounded"
+                    className="absolute top-4 right-4 z-50 text-white bg-black/70 px-2 py-1 rounded"
                 >
                     ✕
                 </button>
 
-                <div className="grid grid-cols-1 md:grid-cols-[45%_55%] md:h-full">
+                <div className="grid grid-cols-1 md:grid-cols-[55%_45%] md:h-full">
 
                     {/* CARROSSEL */}
                     <div className="h-[50vh] md:h-full overflow-hidden relative">

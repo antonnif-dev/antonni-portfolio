@@ -2,9 +2,10 @@ import { useState, useEffect } from "react";
 
 export default function Slide() {
     const slides = [
-        "/projetos/sos-saude/capa-saude.png",
+        "/projetos/institucionais/capa-institucionais.png",
+        "/projetos/sos-musico/capa-musico-home.png",
+        "/projetos/sos-advocacia/capa-advocacia-home.png",
         "/projetos/saas-juridico.PNG",
-        "/projetos/sos-musico/capa-musico.png",
     ];
 
     const slidesMobile = [
@@ -66,7 +67,7 @@ export default function Slide() {
 
     return (
         <div
-            className="relative w-[365px] md:w-3xl h-81 md:h-109 overflow-hidden rounded-xl borda"
+            className="relative w-[365px] md:w-188 h-81 md:h-109 overflow-hidden rounded-xl borda"
             onMouseDown={(e) => handleStart(e.clientX)}
             onMouseUp={(e) => handleEnd(e.clientX)}
             onTouchStart={(e) => handleStart(e.touches[0].clientX)}
@@ -77,7 +78,7 @@ export default function Slide() {
                     key={index}
                     src={img}
                     alt={`slide ${index}`}
-                    className={`absolute top-0 left-0 w-full h-full object-contain object-top transition-opacity duration-700 ${index === current
+                    className={`absolute top-0 left-0 w-full h-full object-cover object-top transition-opacity duration-700 ${index === current
                         ? "opacity-100"
                         : "opacity-0"
                         }`}
@@ -90,7 +91,7 @@ export default function Slide() {
                     <span
                         key={i}
                         onClick={() => setCurrent(i)}
-                        className={`h-2 rounded-full cursor-pointer transition-all ${current === i
+                        className={`h-2 border-1 rounded-full cursor-pointer transition-all ${current === i
                             ? "w-6 bg-white"
                             : "w-2 bg-white/50"
                             }`}

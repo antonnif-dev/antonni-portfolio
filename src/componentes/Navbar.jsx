@@ -23,7 +23,7 @@ export default function Navbar() {
         <nav className="flex justify-between gap-4 p-6 md:p-10 bg-sky-800 dark:bg-white dark:rounded-b-2xl">
             <div className="flex flex-col md:flex-row items-center justify-center leading-tight"
                 onClick={() => navigate('/')}>
-                <p className="titulo-nome text-3xl md:text-5xl text-center font-medium text-white dark:text-black tracking-tight">Antonni Carlos de Freitas Moreira</p>
+                <p className="titulo-nome text-3xl md:text-4xl text-center font-medium text-white dark:text-black tracking-tight">Antonni Carlos de Freitas Moreira</p>
             </div>
 
             <div className="flex gap-4 text-sm md:text-lg flex-col md:flex-row text-white dark:text-black">

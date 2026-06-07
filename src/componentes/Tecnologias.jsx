@@ -27,7 +27,7 @@ export default function Tecnologias() {
   ];
 
   return (
-    <div className="overflow-hidden w-full py-1 md:py-4 bg-gray-600 mb-5">
+    <div className="overflow-hidden w-full py-1 md:py-4 bg-sky-100 mb-5">
       <div className="flex gap-10 animate-slide whitespace-nowrap">
         {/* duplicação para loop infinito */}
         {[...techs, ...techs].map((img, index) => (

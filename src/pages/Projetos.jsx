@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import Carrossel from '../componentes/Carrossel';
 import { useState, useEffect } from "react";
 import ModalProjeto from "../componentes/ModalProjetos";
+import Tecnologias from "../componentes/Tecnologias";
+import ProjetosCarrossel from "../componentes/ProjetosCarrossel";
 
 export default function Projetos() {
     const [selectedProject, setSelectedProject] = useState(null);
@@ -24,17 +26,32 @@ export default function Projetos() {
 
     return (
         <div>
-            {/* 
-            <div className="p-10">
-                <Carrossel />
+            <div className="">
+                <ProjetosCarrossel />
             </div>
-            */}
-            <div className="p-5 space-y-8">
+            <div className="p-5 space-y-5">
                 {[
+                    {
+                        img: "/projetos/institucionais/capa-institucionais.png",
+                        images: [
+                            "/projetos/institucionais/modal-1.png",
+                            "/projetos/institucionais/modal-2.png",
+                            "/projetos/saas-juridico-modal2.PNG",
+                            "/projetos/saas-juridico-modal3.PNG",
+                            "/projetos/saas-juridico-modal4.PNG",
+                            "/projetos/saas-juridico-modal5.PNG"
+                        ],
+                        title: "Landing Pages",
+                        description:
+                            "Página institucional moderna com foco em conversão, responsividade e SEO. Estrutura leve e otimizada para performance.",
+                        techs: {
+                            Frontend: ["React", "JavaScript", "Tailwind"]
+                        }
+                    },
                     {
                         img: "/projetos/sos-saude/capa-saude.png",
                         images: [
-                            "/projetos/sos-saude/modal-dashboard.png",
+                            "/projetos/sos-saude/capa-saude2.png",
                             "/projetos/sos-saude/modal-pacientes.png",
                             "/projetos/sos-saude/modal-sessoes.png",
                             "/projetos/sos-saude/modal-prontuario.png",
@@ -51,7 +68,7 @@ export default function Projetos() {
                         }
                     },
                     {
-                        img: "/projetos/saas-juridico.PNG",
+                        img: "/projetos/sos-advocacia/capa-advocacia.png",
                         images: [
                             "/projetos/sos-advocacia/modal-dashboard.png",
                             "/projetos/sos-advocacia/modal-pacientes.png",
@@ -66,23 +83,6 @@ export default function Projetos() {
                             Frontend: ["React", "Vite", "JavaScript", "Tailwind"],
                             Backend: ["Node", "Express",],
                             BancoDeDados: ["Firebase"]
-                        }
-                    },
-                    {
-                        img: "/projetos/institucionais/capa-institucionais.png",
-                        images: [
-                            "/projetos/institucionais/modal-1.png",
-                            "/projetos/institucionais/modal-2.png",
-                            "/projetos/saas-juridico-modal2.PNG",
-                            "/projetos/saas-juridico-modal3.PNG",
-                            "/projetos/saas-juridico-modal4.PNG",
-                            "/projetos/saas-juridico-modal5.PNG"
-                        ],
-                        title: "Landing Pages",
-                        description:
-                            "Página institucional moderna com foco em conversão, responsividade e SEO. Estrutura leve e otimizada para performance.",
-                        techs: {
-                            Frontend: ["React", "JavaScript", "Tailwind"]
                         }
                     },
                     {
@@ -104,6 +104,60 @@ export default function Projetos() {
                         }
                     },
                     {
+                        img: "/projetos/sos-beleza/capa-beleza.png",
+                        images: [
+                            "/projetos/sos-advocacia/modal-dashboard.png",
+                            "/projetos/sos-advocacia/modal-pacientes.png",
+                            "/projetos/sos-advocacia/modal-sessoes.png",
+                            "/projetos/sos-advocacia/modal-agenda.png",
+                            "/projetos/sos-advocacia/modal-documentos.png",
+                            "/projetos/sos-advocacia/modal-mural.png",
+                        ],
+                        title: "SOS Beleza",
+                        description: "Plataforma para escritórios de advocacia. Com ferramentas que possibilitam. Plataforma para psicólogos com prontuário digital, controle de sessões e portal do paciente. Estrutura pensada para multi-tenant e expansão para outros nichos.",
+                        techs: {
+                            Frontend: ["React", "Vite", "JavaScript", "Tailwind"],
+                            Backend: ["Node", "Express",],
+                            BancoDeDados: ["Supabase"]
+                        }
+                    },
+                    {
+                        img: "/projetos/sos-educacao/capa-educacao.png",
+                        images: [
+                            "/projetos/sos-advocacia/modal-dashboard.png",
+                            "/projetos/sos-advocacia/modal-pacientes.png",
+                            "/projetos/sos-advocacia/modal-sessoes.png",
+                            "/projetos/sos-advocacia/modal-agenda.png",
+                            "/projetos/sos-advocacia/modal-documentos.png",
+                            "/projetos/sos-advocacia/modal-mural.png",
+                        ],
+                        title: "SOS Educação",
+                        description: "Plataforma para escritórios de advocacia. Com ferramentas que possibilitam. Plataforma para psicólogos com prontuário digital, controle de sessões e portal do paciente. Estrutura pensada para multi-tenant e expansão para outros nichos.",
+                        techs: {
+                            Frontend: ["React", "Vite", "JavaScript", "Tailwind"],
+                            Backend: ["Node", "Express",],
+                            BancoDeDados: ["Supabase"]
+                        }
+                    },
+                    {
+                        img: "/projetos/sos-estetica/capa-estetica.png",
+                        images: [
+                            "/projetos/sos-advocacia/modal-dashboard.png",
+                            "/projetos/sos-advocacia/modal-pacientes.png",
+                            "/projetos/sos-advocacia/modal-sessoes.png",
+                            "/projetos/sos-advocacia/modal-agenda.png",
+                            "/projetos/sos-advocacia/modal-documentos.png",
+                            "/projetos/sos-advocacia/modal-mural.png",
+                        ],
+                        title: "SOS Estética",
+                        description: "Plataforma para escritórios de advocacia. Com ferramentas que possibilitam. Plataforma para psicólogos com prontuário digital, controle de sessões e portal do paciente. Estrutura pensada para multi-tenant e expansão para outros nichos.",
+                        techs: {
+                            Frontend: ["React", "Vite", "JavaScript", "Tailwind"],
+                            Backend: ["Node", "Express",],
+                            BancoDeDados: ["Supabase"]
+                        }
+                    },                    
+                    {
                         img: "/projetos/numero-secreto.png",
                         images: [
                             "/projetos/institucionais/modal-1.png",
@@ -117,7 +171,7 @@ export default function Projetos() {
                         description:
                             "Página institucional moderna com foco em conversão, responsividade e SEO. Estrutura leve e otimizada para performance.",
                         techs: {
-                            Frontend: ["React", "JavaScript", "Tailwind"]
+                            Frontend: ["HTML", "CSS", "JavaScript", "React", "Tailwind"]
                         }
                     },
 
@@ -125,7 +179,7 @@ export default function Projetos() {
                 ].map((project, index) => (
                     <div
                         key={index}
-                        className="grid md:grid-cols-2 gap-7 items-center"
+                        className="grid md:grid-cols-2 gap-1 items-center"
                     >
 
                         {/* IMAGEM */}
@@ -182,20 +236,20 @@ export default function Projetos() {
                         </div>
 
                         {/* CONTEÚDO */}
-                        <div className="space-y-4">
+                        <div className="space-y-4 border-1 dark:border-yellow-200 rounded-lg h-full p-2">
 
                             <h2 className="text-2xl font-semibold text-center">
                                 {project.title}
                             </h2>
 
                             {/* TECNOLOGIAS */}
-                            <div className="space-y-2 pt-2">
+                            <div className="space-y-2">
 
                                 {Object.entries(project.techs).map(([category, techs]) => (
 
                                     <div key={category}>
 
-                                        <span className="text-xs md:text-xl">
+                                        <span className="text-xs md:text-xl flex justify-center md:justify-start">
                                             {category}:
                                         </span>
 
@@ -222,6 +276,7 @@ export default function Projetos() {
                 ))}
 
             </div>
+
             {selectedProject && (
                 <ModalProjeto
                     project={selectedProject}
